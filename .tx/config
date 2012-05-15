@@ -4,3 +4,4 @@ host = https://www.transifex.net
 [pinax-theme-bootstrap-account.djangopo]
 file_filter = pinax_theme_bootstrap_account/locale/<lang>/LC_MESSAGES/django.po
 source_lang = en
+source_file = pinax_theme_bootstrap_account/locale/en/LC_MESSAGES/django.po
