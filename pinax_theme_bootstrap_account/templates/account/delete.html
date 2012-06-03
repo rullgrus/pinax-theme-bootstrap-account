@@ -1,0 +1,17 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load bootstrap_tags %}
+
+{% block head_title %}{% trans "Delete Account" %}{% endblock %}
+
+{% block body %}
+    <h2>Delete Account</h2>
+    
+    <p>If you go ahead and delete your account, your information will be <b>expunged within 48 hours</b>.</p>
+    
+    <form method="post" action="{% url account_delete %}">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Delete My Account</button>
+    </form>
+{% endblock %}
