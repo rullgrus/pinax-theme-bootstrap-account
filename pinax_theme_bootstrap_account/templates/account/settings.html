@@ -6,7 +6,7 @@
 
 {% block body %}
     <form method="POST" action="{% url account_settings %}">
-    	<legend>Account</legend>
+        <legend>Account</legend>
         {% csrf_token %}
         {{ form|as_bootstrap }}
         <div class="form-actions">
