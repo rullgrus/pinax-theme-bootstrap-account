@@ -1,11 +1,12 @@
 {% extends "account/base.html" %}
 
+{% load url from future %}
 {% load bootstrap_tags %}
 
 {% block head_title %}Account{% endblock %}
 
 {% block body %}
-    <form method="POST" action="{% url account_settings %}">
+    <form method="POST" action="{% url "account_settings" %}">
         <legend>Account</legend>
         {% csrf_token %}
         {{ form|as_bootstrap }}
