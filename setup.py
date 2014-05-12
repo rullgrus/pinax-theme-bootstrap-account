@@ -111,7 +111,7 @@ AUTHOR_EMAIL = "jtauber@jtauber.com"
 URL = "http://github.com/pinax/pinax-theme-bootstrap-account"
 VERSION = __import__(PACKAGE).__version__
 INSTALL_REQUIRES = [
-    "django-appconf==0.5",
+    "django-appconf==0.6",
 ]
 
 try:
